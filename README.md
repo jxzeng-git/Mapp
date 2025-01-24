@@ -1,18 +1,19 @@
-# SGI: Secure Two-Party Graph Neural Network Inference
+# Mapping: Model-Agnostic Privacy-Preserving Two-Party Inference Framework for Graph Neural Networks
 
-___SGI___ is a Python, C++, and Rust library for **Secure Two-Party Graph Neural Network Inference**
+___Mapping___ is a Python, C++, and Rust library for **Mapping: Model-Agnostic Privacy-Preserving Two-Party Inference Framework for Graph Neural Networks**
 
 ## Overview
 
-This library implements a cryptographic system for efficient inference on general graph convolutional networks.
+This library implements a Privacy-Preserving Two-Party Inference Framework for Graph Neural Networks.
 
 # Directory structure
 
 This repository contains several folders that implement the different building blocks of Delphi. The high-level structure of the repository is as follows.
-* [`server-SGI++/experiments`](server-SGI++/experiments): Rust crate for running latency, bandwidth, throughput, accuracy, and memory usage experiments in server.
-* [`client-SGI++/experiments`](client-SGI++/experiments): Rust crate for running latency, bandwidth, throughput, accuracy, and memory usage experiments in server.
+* [`server-SGI++/experiments`](server-SGI++/experiments): Rust crate for running latency, bandwidth, throughput, accuracy, and memory usage experiments using secure protocol SGI++ in server-side.
+* [`client-SGI++/experiments`](client-SGI++/experiments): Rust crate for running latency, bandwidth, throughput, accuracy, and memory usage experiments using secure protocol SGI++ in client-side.
 * [`client-SGI++/Dataset`](client-SGI++/Dataset): MUTAG dataset.
-* [`client-SGI++/weights`](client-SGI++/weights): The weights of a trained GCN model on MUTAG dataset.
+* [`client-SGI++/weights`](client-SGI++/weights): The weights of a trained GIN model on MUTAG dataset.
+* [`proxy-generator`](proxy-generator): The code of Mapping's proxy generator.
 
 ## Build and perfrom inference
 
